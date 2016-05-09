@@ -1,0 +1,18 @@
+# Spring properties
+spring:
+  application:
+    name: my-service  # Identify this application
+
+# Map the error path to error template (for Thymeleaf)
+error:
+  path=/error
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
+# HTTP Server
+server:
+  port: 3333   # HTTP (Tomcat) port
