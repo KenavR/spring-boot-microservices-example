@@ -9,10 +9,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @SpringBootApplication
-@Configuration
-@ComponentScan
-@EnableAutoConfiguration
-@EnableZuulProxy
 @EnableEurekaServer
 public class GatewayApplication {
     public static void main(String[] args) {

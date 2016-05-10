@@ -8,6 +8,8 @@ eureka:
   client:  # Not a client, don't register with yourself
     registerWithEureka: false
     fetchRegistry: false
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
 
 server:
   port: 1111   # HTTP (Tomcat) port
