@@ -17,3 +17,6 @@ This produces the following error
   nested exception is org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://MY-SERVICE/test": MY-SERVICE;
   nested exception is java.net.UnknownHostException: MY-SERVICE] with root cause
 ```
+
+## Stackoverflow Question
+http://stackoverflow.com/questions/37159662/microservices-resttemplate-unknownhostexception
