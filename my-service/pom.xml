@@ -14,8 +14,7 @@
     <parent>
         <groupId>org.springframework.cloud</groupId>
         <artifactId>spring-cloud-starter-parent</artifactId>
-        <version>Angel.SR6</version>  <!-- Name of release train -->
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>Brixton.RELEASE</version>
     </parent>
 
     <properties>

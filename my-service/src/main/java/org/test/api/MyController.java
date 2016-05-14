@@ -1,10 +1,7 @@
 package org.test.api;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,8 +11,10 @@ import java.util.Map;
 public class MyController {
 
 
-    @RequestMapping(method = RequestMethod.POST)
-    public @ResponseBody Map<String, String> getTest(@RequestParam("id") Long id) {
+    @RequestMapping(method = RequestMethod.POST, produces = "application/json; charset=utf-8")
+    public @ResponseBody Map<String, String> getTest(@RequestBody Map<String, Long> params) {
+
+        System.out.println("GET TEST: " + params.get("id"));
 
         Map<String, String> response = new HashMap<>();
 
